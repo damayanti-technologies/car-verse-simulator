@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Verse Simulator - Official Portal & Legal Policies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #070a10;
+            --bg-card: #0e1422;
+            --bg-card-border: #1a253a;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent-cyan: #00e5ff;
+            --accent-blue: #0284c7;
+            --accent-red: #ff3366;
+            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-heading: 'Space Grotesk', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.7;
+            padding: 0;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .hero {
+            background: radial-gradient(circle at 50% 20%, rgba(0, 229, 255, 0.12) 0%, rgba(7, 10, 16, 0.98) 75%), #070a10;
+            border-bottom: 1px solid var(--bg-card-border);
+            padding: 80px 24px 60px;
+            text-align: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(0, 229, 255, 0.12);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(0, 229, 255, 0.35);
+            border-radius: 999px;
+            padding: 6px 18px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: 3.2rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: #ffffff;
+            line-height: 1.15;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, #ffffff 30%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 650px;
+            margin: 0 auto 32px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #0284c7 0%, #00e5ff 100%);
+            color: #04101e;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 14px 28px;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 229, 255, 0.35);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.06);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 14px 28px;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--bg-card-border);
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: border-color 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: rgba(0, 229, 255, 0.4);
+        }
+
+        .card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+
+        .card-link {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 24px;
+            border-top: 1px solid var(--bg-card-border);
+            color: var(--text-muted);
+            font-size: 0.88rem;
+        }
+
+        .footer a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <span class="hero-badge">Damayanti Technologies</span>
+        <h1>CAR VERSE <span>SIMULATOR</span></h1>
+        <p>Photorealistic 3D Mobile Racing Engine with Vulkan Hardware Acceleration, Sunset Coastal Highways, and Online Competitive Multiplayer.</p>
+        <div class="hero-actions">
+            <a href="privacy.html" class="btn-primary"><span>ðŸ“„</span> Privacy Policy</a>
+            <a href="delete-account.html" class="btn-secondary"><span>ðŸ—‘ï¸</span> Account Deletion</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3><span>ðŸ“œ</span> Privacy Policy</h3>
+                    <p>Read how Damayanti Technologies collects, secures, and handles player authentication, leaderboard rankings, and graphics telemetry in full compliance with Google Play Data Safety standards.</p>
+                </div>
+                <a href="privacy.html" class="card-link">Read Privacy Policy &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3><span>ðŸ—‘ï¸</span> Account & Data Deletion</h3>
+                    <p>Learn how to permanently purge your game account, driver telemetry, and Firebase records either in-app or via our direct email request workflow within 30 days.</p>
+                </div>
+                <a href="delete-account.html" class="card-link">Account Deletion Details &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3><span>ðŸ¢</span> Publisher Support</h3>
+                    <p>Contact the Damayanti Technologies development and player support team for bug reports, account inquiries, or privacy assistance.</p>
+                </div>
+                <a href="mailto:damayanticrest@gmail.com" class="card-link">Contact Support &rarr;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Damayanti Technologies. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> &bull; <a href="delete-account.html">Account & Data Deletion</a></p>
+    </footer>
+
+</body>
+</html>
