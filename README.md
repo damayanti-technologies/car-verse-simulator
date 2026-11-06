@@ -2,11 +2,11 @@
 
 Official Legal, Privacy Policy, and Account Deletion documentation portal for **Car Verse Simulator**, developed and published by **Damayanti Technologies**.
 
-This repository hosts public web pages required by the **Google Play Console** for store listing compliance:
+This repository hosts clean, light-themed public web pages required by the **Google Play Console** for store listing compliance:
 
 ---
 
-## ðŸ”— Public Live URLs (Google Play Console Ready)
+## Public Live URLs (Google Play Console Ready)
 
 | Requirement | Live URL | Description |
 |---|---|---|
@@ -16,7 +16,7 @@ This repository hosts public web pages required by the **Google Play Console** f
 
 ---
 
-## ðŸ›¡ï¸ Google Play Console Compliance Highlights
+## Google Play Console Compliance Highlights
 
 ### 1. Privacy Policy Compliance
 - Specifies developer identity: **Damayanti Technologies**
@@ -26,13 +26,13 @@ This repository hosts public web pages required by the **Google Play Console** f
 
 ### 2. Account & Data Deletion Policy Compliance
 - Provides **two clear methods** to delete accounts:
-  1. **In-App:** Settings &rarr; Account &rarr; Delete Account.
-  2. **Web / Email:** Direct mailto link and template to damayanticrest@gmail.com without needing to reinstall the app.
+  1. **In-App:** Settings -> Account -> Delete Account.
+  2. **Web / Email:** Direct mailto link and template to `damayanticrest@gmail.com` without needing to reinstall the app.
 - Outlines exact data purged (credentials, driver profiles, cloud saves, telemetry) and statutory retention requirements (tax/financial transaction receipts only).
 - Guarantees fulfillment within **30 calendar days**.
 
 ---
 
-## ðŸ“¬ Contact & Support
+## Contact & Support
 - **Publisher:** Damayanti Technologies
 - **Email:** [damayanticrest@gmail.com](mailto:damayanticrest@gmail.com)
