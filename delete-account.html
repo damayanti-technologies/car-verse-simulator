@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account & Data Deletion - Car Verse Simulator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <title>Account and Data Deletion - Car Verse Simulator</title>
     <style>
         :root {
-            --bg-dark: #080c14;
-            --bg-card: #0f1624;
-            --bg-card-border: #1a2438;
-            --text-main: #f1f5f9;
-            --text-muted: #94a3b8;
-            --accent-cyan: #00e5ff;
-            --accent-red: #ff3366;
-            --accent-green: #10b981;
-            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-heading: 'Space Grotesk', sans-serif;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --primary-color: #0f172a;
+            --primary-hover: #1e293b;
+            --danger-color: #b91c1c;
+            --danger-hover: #991b1b;
+            --callout-bg: #f1f5f9;
         }
 
         * {
@@ -28,307 +26,299 @@
         }
 
         body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            font-family: var(--font-main);
+            background-color: var(--bg-page);
+            color: var(--text-body);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
             line-height: 1.7;
-            padding: 0;
-            margin: 0;
             -webkit-font-smoothing: antialiased;
         }
 
         .header {
-            background: linear-gradient(180deg, #181122 0%, #080c14 100%);
-            border-bottom: 1px solid var(--bg-card-border);
-            padding: 40px 24px 30px;
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 40px 24px;
             text-align: center;
         }
 
-        .header-badge {
+        .badge {
             display: inline-block;
-            background: rgba(255, 51, 102, 0.12);
-            color: var(--accent-red);
-            border: 1px solid rgba(255, 51, 102, 0.3);
-            border-radius: 999px;
-            padding: 6px 16px;
-            font-size: 0.82rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
+            background-color: var(--callout-bg);
+            color: var(--text-heading);
+            border: 1px solid var(--border-color);
+            border-radius: 9999px;
+            padding: 4px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
             text-transform: uppercase;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
         .header h1 {
-            font-family: var(--font-heading);
-            font-size: 2.4rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            color: #ffffff;
+            color: var(--text-heading);
+            font-size: 2.2rem;
+            font-weight: 800;
             margin-bottom: 8px;
+            letter-spacing: -0.02em;
         }
 
         .header p {
             color: var(--text-muted);
             font-size: 1rem;
-            max-width: 600px;
-            margin: 0 auto;
         }
 
         .nav-bar {
             display: flex;
             justify-content: center;
-            gap: 16px;
-            padding: 16px 24px;
-            background: #0b111e;
-            border-bottom: 1px solid var(--bg-card-border);
+            gap: 12px;
+            padding: 14px 24px;
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .nav-link {
             color: var(--text-muted);
             text-decoration: none;
-            font-size: 0.92rem;
+            font-size: 14px;
             font-weight: 600;
-            padding: 8px 16px;
-            border-radius: 8px;
-            transition: all 0.2s ease;
+            padding: 6px 14px;
+            border-radius: 6px;
+            transition: all 0.15s ease;
         }
 
-        .nav-link:hover, .nav-link.active {
-            color: var(--accent-cyan);
-            background: rgba(0, 229, 255, 0.08);
+        .nav-link:hover {
+            color: var(--text-heading);
+            background-color: var(--callout-bg);
+        }
+
+        .nav-link.active {
+            color: var(--text-heading);
+            background-color: var(--callout-bg);
+            border: 1px solid var(--border-color);
         }
 
         .container {
-            max-width: 860px;
+            max-width: 820px;
             margin: 0 auto;
-            padding: 40px 24px 80px;
+            padding: 40px 20px 80px;
         }
 
         .card {
-            background: var(--bg-card);
-            border: 1px solid var(--bg-card-border);
-            border-radius: 16px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
             padding: 32px;
-            margin-bottom: 28px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
         }
 
         .card h2 {
-            font-family: var(--font-heading);
-            color: #ffffff;
-            font-size: 1.45rem;
+            color: var(--text-heading);
+            font-size: 1.35rem;
             font-weight: 700;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f1f5f9;
         }
 
         .card p {
-            color: #cbd5e1;
             margin-bottom: 14px;
-            font-size: 0.98rem;
-        }
-
-        .card ol, .card ul {
-            padding-left: 20px;
-            margin: 14px 0;
-            color: #cbd5e1;
-        }
-
-        .card li {
-            margin-bottom: 10px;
-            font-size: 0.96rem;
+            color: var(--text-body);
         }
 
         .step-box {
-            background: #131b2e;
-            border: 1px solid #1e2a44;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 16px 0;
+            background-color: var(--callout-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin: 14px 0;
         }
 
         .step-title {
-            color: var(--accent-cyan);
+            color: var(--text-heading);
             font-weight: 700;
-            font-size: 1rem;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-size: 15px;
+            margin-bottom: 6px;
         }
 
-        .email-template-box {
-            background: #080d18;
-            border: 1px dashed #2a3b5c;
-            border-radius: 12px;
-            padding: 20px;
+        .email-template {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 18px;
             font-family: monospace;
-            font-size: 0.92rem;
-            color: #94a3b8;
-            margin: 18px 0;
-            white-space: pre-wrap;
-        }
-
-        .email-template-box strong {
-            color: var(--accent-cyan);
+            font-size: 13.5px;
+            color: #1e293b;
+            margin: 16px 0;
+            line-height: 1.6;
         }
 
         .btn-delete {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: linear-gradient(135deg, #e11d48 0%, #ff3366 100%);
+            display: inline-block;
+            background-color: var(--danger-color);
             color: #ffffff;
             text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            padding: 14px 28px;
-            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 12px 24px;
+            border-radius: 6px;
             margin-top: 10px;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 18px rgba(255, 51, 102, 0.35);
+            transition: background-color 0.15s ease;
         }
 
         .btn-delete:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 51, 102, 0.5);
+            background-color: var(--danger-hover);
         }
 
-        .badge-tag {
+        .card ul {
+            margin: 12px 0 16px 20px;
+            color: var(--text-body);
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        .tag {
             display: inline-block;
-            background: rgba(16, 185, 129, 0.15);
-            color: var(--accent-green);
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            margin-left: 8px;
+            background-color: #ecfdf5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 6px;
         }
 
         .footer {
             text-align: center;
-            padding: 40px 24px;
-            border-top: 1px solid var(--bg-card-border);
+            padding: 30px 20px;
+            border-top: 1px solid var(--border-color);
             color: var(--text-muted);
-            font-size: 0.88rem;
+            font-size: 14px;
+            background-color: #ffffff;
         }
 
         .footer a {
-            color: var(--accent-cyan);
-            text-decoration: none;
+            color: var(--text-heading);
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header class="header">
-        <span class="header-badge">Google Play Data Safety Compliant</span>
-        <h1>Account & Data Deletion</h1>
+        <span class="badge">Google Play Data Safety</span>
+        <h1>Account and Data Deletion</h1>
         <p>Car Verse Simulator &bull; Damayanti Technologies</p>
     </header>
 
     <nav class="nav-bar">
         <a href="index.html" class="nav-link">Home</a>
         <a href="privacy.html" class="nav-link">Privacy Policy</a>
-        <a href="delete-account.html" class="nav-link active">Account & Data Deletion</a>
+        <a href="delete-account.html" class="nav-link active">Account Deletion</a>
     </nav>
 
     <main class="container">
 
         <div class="card">
-            <h2><span>ðŸ›¡ï¸</span> Overview of Deletion Rights</h2>
-            <p>At <strong>Damayanti Technologies</strong>, we fully respect your right to control your digital footprint. In compliance with the <strong>Google Play Console Account Deletion Policy</strong>, players of <strong>Car Verse Simulator</strong> have the right to request the complete and permanent deletion of their account credentials, driver profile, and all associated personal and gameplay data.</p>
-            <p>You may request deletion either <strong>directly within the game application</strong> or <strong>via email without needing to reinstall the application</strong>.</p>
+            <h2>1. Policy Overview</h2>
+            <p>Under the Google Play Developer Policy on Account Deletion, users of <strong>Car Verse Simulator</strong> have the right to request the complete deletion of their account credentials, personal data, and gameplay records.</p>
+            <p>You can delete your account using either of the following two options:</p>
+            <ul>
+                <li><strong>In-App Deletion:</strong> Instantly delete your account and records from within the game settings.</li>
+                <li><strong>Email / Web Request:</strong> Submit an account deletion request if you have uninstalled the application or cannot access your Android device.</li>
+            </ul>
         </div>
 
         <div class="card">
-            <h2><span>ðŸ“±</span> Option 1: In-App Account Deletion (Instant)</h2>
-            <p>If you have <strong>Car Verse Simulator</strong> installed on your Android device:</p>
+            <h2>2. Method 1: Delete Account Inside the App</h2>
+            <p>If you have Car Verse Simulator installed on your device, follow these steps:</p>
 
             <div class="step-box">
-                <div class="step-title"><span>1.</span> Open Game Settings / Profile</div>
-                <p>Launch the game and tap the <strong>âš™ï¸ Settings</strong> icon in the top-right corner of the HUD or tap your <strong>Driver Profile Pill</strong>.</p>
+                <div class="step-title">Step 1: Open Settings</div>
+                <p>Launch Car Verse Simulator and tap the <strong>Settings (gear icon)</strong> on the top-right corner of the screen.</p>
             </div>
 
             <div class="step-box">
-                <div class="step-title"><span>2.</span> Navigate to Account Management</div>
-                <p>Scroll down to the <strong>Account & Security</strong> section where your registered email or player UID is displayed.</p>
+                <div class="step-title">Step 2: Select Account Deletion</div>
+                <p>In the Settings menu, select <strong>Delete Account (Google Play Policy)</strong>.</p>
             </div>
 
             <div class="step-box">
-                <div class="step-title"><span>3.</span> Tap "Delete Account" & Confirm</div>
-                <p>Tap the red <strong>Delete Account</strong> button and confirm the dialog prompt. Your authentication record, cloud garage save, and telemetry will be erased immediately.</p>
+                <div class="step-title">Step 3: Confirm Deletion</div>
+                <p>A confirmation dialog will appear. Tap <strong>Yes, Permanently Delete</strong>. Your Firebase credentials, garage progress, and telemetry will be removed immediately.</p>
             </div>
         </div>
 
         <div class="card">
-            <h2><span>âœ‰ï¸</span> Option 2: Request Deletion via Email (Web Request)</h2>
-            <p>If you have uninstalled the game, no longer have access to your Android device, or prefer submitting a manual web request, click the button below to send an account deletion email directly to our support team:</p>
+            <h2>3. Method 2: Request Account Deletion by Email</h2>
+            <p>If you have uninstalled the app or prefer to request deletion via email, click the button below to generate a pre-formatted email request to our support team:</p>
 
-            <a href="mailto:damayanticrest@gmail.com?subject=%5BData%20%26%20Account%20Deletion%20Request%5D%20Car%20Verse%20Simulator&body=Hello%20Damayanti%20Technologies%20Support%20Team%2C%0A%0AI%20am%20requesting%20the%20permanent%20deletion%20of%20my%20game%20account%20and%20all%20associated%20data%20for%20Car%20Verse%20Simulator.%0A%0AMy%20Account%20Details%3A%0A-%20Registered%20Email%20Address%3A%20%5BEnter%20your%20email%20here%5D%0A-%20In-Game%20Driver%20Name%20%2F%20UID%20(if%20known)%3A%20%5BEnter%20name%20or%20UID%5D%0A%0APlease%20confirm%20once%20my%20account%20and%20data%20have%20been%20permanently%20purged.%0A%0AThank%20you." class="btn-delete">
-                <span>ðŸ“§</span> Send Account Deletion Request Email
+            <a href="mailto:damayanticrest@gmail.com?subject=Account%20and%20Data%20Deletion%20Request%20-%20Car%20Verse%20Simulator&body=Hello%20Damayanti%20Technologies%20Support%2C%0A%0APlease%20permanently%20delete%20my%20game%20account%20and%20all%20associated%20data%20for%20Car%20Verse%20Simulator.%0A%0AMy%20Account%20Information%3A%0A-%20Registered%20Email%20Address%3A%20%5BEnter%20your%20email%20here%5D%0A-%20In-Game%20Driver%20Name%20or%20UID%20(if%20known)%3A%20%5BEnter%20name%20or%20UID%5D%0A%0AThank%20you." class="btn-delete">
+                Send Account Deletion Request Email
             </a>
 
-            <div style="margin-top: 24px;">
-                <p><strong>Alternatively, write to us manually with the following format:</strong></p>
-                <div class="email-template-box">
+            <div style="margin-top: 20px;">
+                <p>You can also send an email manually using the following format:</p>
+                <div class="email-template">
 <strong>To:</strong> damayanticrest@gmail.com
-<strong>Subject:</strong> [Data & Account Deletion Request] Car Verse Simulator
+<strong>Subject:</strong> Account and Data Deletion Request - Car Verse Simulator
 
 <strong>Body:</strong>
-Hello Damayanti Technologies Support Team,
+Hello Damayanti Technologies Support,
 
-I request the permanent deletion of my account and all associated personal and gameplay data for Car Verse Simulator.
+Please permanently delete my game account and all associated data for Car Verse Simulator.
 
-- Registered Email: [Your Email Address]
-- In-Game Driver Name / UID: [Your Driver Name or UID, if known]
+My Account Information:
+- Registered Email Address: [Your Email]
+- In-Game Driver Name or User ID (if known): [Your Name or UID]
 
-Please confirm once the deletion is finalized.
+Thank you.
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <h2><span>ðŸ“Š</span> What Data Is Deleted vs. Retained</h2>
-
-            <p><strong style="color:#00e5ff;">Data That Will Be Permanently Purged:</strong></p>
+            <h2>4. What Data Is Deleted vs. Retained</h2>
+            <p><strong>Data that is permanently deleted:</strong></p>
             <ul>
-                <li>Your Firebase Authentication credentials (Email, Password hash, UID, tokens).</li>
-                <li>Your competitive multiplayer profile, career records, and leaderboard rankings.</li>
-                <li>Your customized vehicle setups, tuned parts, and garage progress.</li>
-                <li>All diagnostic logs and telemetry tied to your account identifier.</li>
+                <li>Firebase Authentication profile, email address, password hash, and User ID.</li>
+                <li>Saved garage progress, vehicle setups, and career milestones.</li>
+                <li>Online multiplayer leaderboard placements, lap times, and telemetry.</li>
             </ul>
 
-            <p><strong style="color:#fbbf24;">Data That May Be Retained (Legal Mandates Only):</strong></p>
+            <p><strong>Data that may be retained (legal requirement only):</strong></p>
             <ul>
-                <li><strong>Statutory Financial Records:</strong> If you made real-money in-app purchases through Google Play Billing, transaction receipts (Order ID, purchase timestamp, currency amount) must be retained strictly to satisfy mandatory taxation, accounting, and anti-fraud statutory legal requirements.</li>
-                <li>No gameplay, identity, or contact data is retained after deletion.</li>
+                <li><strong>Statutory Financial Records:</strong> In-app purchase transaction receipts (if any) are retained only where mandated by statutory tax, accounting, or anti-fraud laws. No personal gameplay or login data is retained.</li>
             </ul>
         </div>
 
         <div class="card">
-            <h2><span>â±ï¸</span> Deletion Timeline & Confirmation <span class="badge-tag">Within 30 Days</span></h2>
-            <p>In full compliance with Google Play Developer policies:</p>
+            <h2>5. Deletion Timeline <span class="tag">Within 30 Days</span></h2>
+            <p>In accordance with Google Play Developer Policies:</p>
             <ul>
-                <li><strong>In-App Deletion:</strong> Processed instantly upon confirmation.</li>
-                <li><strong>Email Deletion Requests:</strong> Verified, processed, and completely deleted within <strong>30 calendar days</strong> of receipt.</li>
-                <li>You will receive a confirmation response upon successful account purging.</li>
+                <li><strong>In-app deletion:</strong> Executed immediately upon confirmation.</li>
+                <li><strong>Email requests:</strong> Verified and permanently processed within <strong>30 calendar days</strong> of receipt. You will receive a confirmation email once the process is complete.</li>
             </ul>
         </div>
 
         <div class="card">
-            <h2><span>ðŸ¢</span> Contact Information</h2>
-            <p><strong>Publisher:</strong> Damayanti Technologies</p>
-            <p><strong>Support & Privacy Email:</strong> <a href="mailto:damayanticrest@gmail.com" style="color:var(--accent-cyan); font-weight:600;">damayanticrest@gmail.com</a></p>
+            <h2>6. Developer Support</h2>
+            <p>For assistance with account deletion or data safety questions, please contact:</p>
+            <ul>
+                <li><strong>Publisher:</strong> Damayanti Technologies</li>
+                <li><strong>Email:</strong> <a href="mailto:damayanticrest@gmail.com" style="color:var(--text-heading); font-weight:600;">damayanticrest@gmail.com</a></li>
+            </ul>
         </div>
 
     </main>
 
     <footer class="footer">
         <p>&copy; 2026 Damayanti Technologies. All rights reserved.</p>
-        <p><a href="privacy.html">Privacy Policy</a> &bull; <a href="delete-account.html">Account & Data Deletion</a></p>
+        <p style="margin-top:6px;"><a href="privacy.html">Privacy Policy</a> &bull; <a href="delete-account.html">Account Deletion</a></p>
     </footer>
 
 </body>
