@@ -39,6 +39,14 @@
             text-align: center;
         }
 
+        .badge-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
         .badge {
             display: inline-block;
             background-color: var(--callout-bg);
@@ -50,7 +58,12 @@
             font-weight: 600;
             letter-spacing: 0.04em;
             text-transform: uppercase;
-            margin-bottom: 12px;
+        }
+
+        .badge-family {
+            background-color: #f0fdf4;
+            color: #166534;
+            border: 1px solid #bbf7d0;
         }
 
         .header h1 {
@@ -139,9 +152,12 @@
 <body>
 
     <header class="header">
-        <span class="badge">Damayanti Technologies</span>
+        <div class="badge-row">
+            <span class="badge">Damayanti Technologies</span>
+            <span class="badge badge-family">All Ages & Families</span>
+        </div>
         <h1>Car Verse Simulator</h1>
-        <p>Official legal documentation and player support portal.</p>
+        <p>Official legal documentation, privacy policies, and player support portal.</p>
     </header>
 
     <main class="container">
@@ -149,7 +165,7 @@
             <div class="card">
                 <div>
                     <h2>Privacy Policy</h2>
-                    <p>Review how Damayanti Technologies handles player authentication, telemetry, and data security in full compliance with Google Play Store policies.</p>
+                    <p>Review how Damayanti Technologies handles player authentication, telemetry, and data security in full compliance with Google Play Store and Families policies.</p>
                 </div>
                 <a href="privacy.html" class="card-link">View Privacy Policy &rarr;</a>
             </div>
@@ -157,7 +173,7 @@
             <div class="card">
                 <div>
                     <h2>Account Deletion</h2>
-                    <p>Learn how to permanently delete your game account and all associated telemetry either directly in-game or via email request within 30 days.</p>
+                    <p>Learn how players and parents can permanently delete accounts and telemetry either directly in-game or via email request within 30 days.</p>
                 </div>
                 <a href="delete-account.html" class="card-link">View Deletion Details &rarr;</a>
             </div>
@@ -167,7 +183,7 @@
                     <h2>Developer Contact</h2>
                     <p>Need support or have inquiries? Get in touch with the Damayanti Technologies development and player support team.</p>
                 </div>
-                <a href="mailto:damayanticrest@gmail.com" class="card-link">Contact Developer &rarr;</a>
+                <a href="mailto:damayanti.technologies@gmail.com" class="card-link">Contact Developer &rarr;</a>
             </div>
         </div>
     </main>
