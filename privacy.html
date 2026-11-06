@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Car Verse Simulator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-dark: #080c14;
-            --bg-card: #0f1624;
-            --bg-card-border: #1a2438;
-            --text-main: #f1f5f9;
-            --text-muted: #94a3b8;
-            --accent-cyan: #00e5ff;
-            --accent-blue: #0284c7;
-            --accent-green: #10b981;
-            --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-            --font-heading: 'Space Grotesk', sans-serif;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border-color: #e2e8f0;
+            --border-hover: #cbd5e1;
+            --text-heading: #0f172a;
+            --text-body: #334155;
+            --text-muted: #64748b;
+            --primary-color: #0f172a;
+            --primary-hover: #1e293b;
+            --callout-bg: #f1f5f9;
         }
 
         * {
@@ -28,188 +25,186 @@
         }
 
         body {
-            background-color: var(--bg-dark);
-            color: var(--text-main);
-            font-family: var(--font-main);
+            background-color: var(--bg-page);
+            color: var(--text-body);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
             line-height: 1.7;
-            padding: 0;
-            margin: 0;
             -webkit-font-smoothing: antialiased;
         }
 
         .header {
-            background: linear-gradient(180deg, #10192b 0%, #080c14 100%);
-            border-bottom: 1px solid var(--bg-card-border);
-            padding: 40px 24px 30px;
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 40px 24px;
             text-align: center;
         }
 
-        .header-badge {
+        .badge {
             display: inline-block;
-            background: rgba(0, 229, 255, 0.12);
-            color: var(--accent-cyan);
-            border: 1px solid rgba(0, 229, 255, 0.3);
-            border-radius: 999px;
-            padding: 6px 16px;
-            font-size: 0.82rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
+            background-color: var(--callout-bg);
+            color: var(--text-heading);
+            border: 1px solid var(--border-color);
+            border-radius: 9999px;
+            padding: 4px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.04em;
             text-transform: uppercase;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
         .header h1 {
-            font-family: var(--font-heading);
-            font-size: 2.4rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            color: #ffffff;
+            color: var(--text-heading);
+            font-size: 2.2rem;
+            font-weight: 800;
             margin-bottom: 8px;
+            letter-spacing: -0.02em;
         }
 
         .header p {
             color: var(--text-muted);
             font-size: 1rem;
-            max-width: 600px;
-            margin: 0 auto;
         }
 
         .nav-bar {
             display: flex;
             justify-content: center;
-            gap: 16px;
-            padding: 16px 24px;
-            background: #0b111e;
-            border-bottom: 1px solid var(--bg-card-border);
+            gap: 12px;
+            padding: 14px 24px;
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .nav-link {
             color: var(--text-muted);
             text-decoration: none;
-            font-size: 0.92rem;
+            font-size: 14px;
             font-weight: 600;
-            padding: 8px 16px;
-            border-radius: 8px;
-            transition: all 0.2s ease;
+            padding: 6px 14px;
+            border-radius: 6px;
+            transition: all 0.15s ease;
         }
 
-        .nav-link:hover, .nav-link.active {
-            color: var(--accent-cyan);
-            background: rgba(0, 229, 255, 0.08);
+        .nav-link:hover {
+            color: var(--text-heading);
+            background-color: var(--callout-bg);
+        }
+
+        .nav-link.active {
+            color: var(--text-heading);
+            background-color: var(--callout-bg);
+            border: 1px solid var(--border-color);
         }
 
         .container {
-            max-width: 860px;
+            max-width: 820px;
             margin: 0 auto;
-            padding: 40px 24px 80px;
+            padding: 40px 20px 80px;
         }
 
         .card {
-            background: var(--bg-card);
-            border: 1px solid var(--bg-card-border);
-            border-radius: 16px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
             padding: 32px;
-            margin-bottom: 28px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
         }
 
         .card h2 {
-            font-family: var(--font-heading);
-            color: #ffffff;
-            font-size: 1.45rem;
+            color: var(--text-heading);
+            font-size: 1.35rem;
             font-weight: 700;
-            margin-bottom: 16px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .card h2 .icon {
-            color: var(--accent-cyan);
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f1f5f9;
         }
 
         .card p {
-            color: #cbd5e1;
             margin-bottom: 14px;
-            font-size: 0.98rem;
+            color: var(--text-body);
         }
 
         .card ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 14px 0;
+            margin: 12px 0 16px 20px;
+            color: var(--text-body);
         }
 
         .card li {
-            position: relative;
-            padding-left: 24px;
-            margin-bottom: 10px;
-            color: #cbd5e1;
-            font-size: 0.96rem;
+            margin-bottom: 8px;
         }
 
-        .card li::before {
-            content: "â€¢";
-            position: absolute;
-            left: 8px;
-            color: var(--accent-cyan);
-            font-weight: bold;
-            font-size: 1.2rem;
-            line-height: 1;
+        .meta-info {
+            background-color: var(--callout-bg);
+            border-left: 4px solid var(--text-heading);
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            font-size: 14px;
+            color: var(--text-body);
         }
 
-        .highlight-box {
-            background: rgba(0, 229, 255, 0.05);
-            border-left: 4px solid var(--accent-cyan);
-            padding: 16px 20px;
-            border-radius: 0 12px 12px 0;
-            margin: 18px 0;
-        }
-
-        .highlight-box p {
-            margin: 0;
-            color: #e2e8f0;
-            font-weight: 500;
-        }
-
-        .cta-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: linear-gradient(135deg, #0284c7 0%, #00e5ff 100%);
-            color: #04101e;
+        .button-link {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #ffffff;
             text-decoration: none;
-            font-weight: 700;
-            font-size: 0.95rem;
-            padding: 12px 24px;
-            border-radius: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 10px 20px;
+            border-radius: 6px;
             margin-top: 10px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            transition: background-color 0.15s ease;
         }
 
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 229, 255, 0.35);
+        .button-link:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 16px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th, td {
+            padding: 12px 14px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--callout-bg);
+            color: var(--text-heading);
+            font-weight: 600;
         }
 
         .footer {
             text-align: center;
-            padding: 40px 24px;
-            border-top: 1px solid var(--bg-card-border);
+            padding: 30px 20px;
+            border-top: 1px solid var(--border-color);
             color: var(--text-muted);
-            font-size: 0.88rem;
+            font-size: 14px;
+            background-color: #ffffff;
         }
 
         .footer a {
-            color: var(--accent-cyan);
-            text-decoration: none;
+            color: var(--text-heading);
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header class="header">
-        <span class="header-badge">Google Play Store Compliant</span>
+        <span class="badge">Google Play Policy Compliant</span>
         <h1>Privacy Policy</h1>
         <p>Car Verse Simulator &bull; Damayanti Technologies</p>
     </header>
@@ -217,80 +212,102 @@
     <nav class="nav-bar">
         <a href="index.html" class="nav-link">Home</a>
         <a href="privacy.html" class="nav-link active">Privacy Policy</a>
-        <a href="delete-account.html" class="nav-link">Account & Data Deletion</a>
+        <a href="delete-account.html" class="nav-link">Account Deletion</a>
     </nav>
 
     <main class="container">
 
         <div class="card">
-            <h2><span class="icon">ðŸ“‹</span> 1. Introduction</h2>
-            <p>Welcome to <strong>Car Verse Simulator</strong>, an original high-fidelity 3D mobile racing experience developed and published by <strong>Damayanti Technologies</strong> ("we", "our", or "us").</p>
-            <p>We are deeply committed to protecting your privacy and handling your personal data transparently in full compliance with the <strong>Google Play Developer Distribution Agreement</strong>, <strong>Google Play Data Safety Policies</strong>, the <strong>General Data Protection Regulation (GDPR)</strong>, and the <strong>California Consumer Privacy Act (CCPA)</strong>.</p>
-            <p><strong>Effective Date:</strong> November 6, 2026<br>
-            <strong>Last Updated:</strong> November 6, 2026</p>
-        </div>
-
-        <div class="card">
-            <h2><span class="icon">ðŸ”</span> 2. Information We Collect</h2>
-            <p>To provide smooth real-time multiplayer racing, cloud account saving, and optimal graphics rendering, we may collect the following categories of information:</p>
-
-            <ul>
-                <li><strong>Account Information:</strong> When you sign in (e.g., via Firebase Authentication or Google Sign-In), we process your unique User ID (UID), display name, and email address to authenticate your profile and sync your garage.</li>
-                <li><strong>Gameplay & Telemetry:</strong> In-game lap times, racing leaderboard positions, vehicle configurations, drift scores, and race statistics.</li>
-                <li><strong>Technical & Device Diagnostics:</strong> Device manufacturer, model, operating system version, graphics hardware capabilities (ARM Mali, Adreno, Vulkan 1.3 / OpenGL ES support), frame rate diagnostics, and anonymized crash logs to ensure seamless performance across devices.</li>
-            </ul>
-
-            <div class="highlight-box">
-                <p><strong>Note on Guest / Anonymous Play:</strong> You can play Car Verse Simulator without registering an email account using our instant Guest mode. Guest session data is kept anonymous and is tied only to a temporary device identifier.</p>
+            <h2>1. Introduction</h2>
+            <p>Damayanti Technologies ("we", "our", or "us") provides this Privacy Policy to inform you of our policies regarding the collection, use, and disclosure of personal data when you use our mobile application, <strong>Car Verse Simulator</strong>.</p>
+            <p>This policy is designed to comply with Google Play Developer Policies (including the Google Play Data Safety requirements), the General Data Protection Regulation (GDPR), and the California Consumer Privacy Act (CCPA).</p>
+            <div class="meta-info">
+                <strong>Effective Date:</strong> November 6, 2026<br>
+                <strong>Last Updated:</strong> November 6, 2026<br>
+                <strong>Developer / Publisher:</strong> Damayanti Technologies
             </div>
         </div>
 
         <div class="card">
-            <h2><span class="icon">âš™ï¸</span> 3. How We Use Your Information</h2>
-            <p>We process collected data strictly for legitimate operational purposes:</p>
+            <h2>2. Information We Collect</h2>
+            <p>We collect information to operate the game, maintain online multiplayer synchronization, and provide a secure, enjoyable gaming experience:</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data Category</th>
+                            <th>Data Types</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Account & Identity</strong></td>
+                            <td>Email address, Display Name, User ID (UID), Google Sign-In profile information.</td>
+                            <td>Account authentication, persistent garage storage, and career progression saving via Firebase Authentication.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Gameplay & Telemetry</strong></td>
+                            <td>Vehicle coordinates, lap times, drift scores, leaderboard rankings, and online race room status.</td>
+                            <td>Real-time multiplayer race synchronization and global competitive leaderboards.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Device Diagnostics</strong></td>
+                            <td>Device manufacturer, model, operating system version, GPU specifications (Vulkan / OpenGL ES capabilities), and anonymized crash logs.</td>
+                            <td>Engine optimization, frame-rate pacing, and application stability improvements.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>Guest Mode:</strong> Players may choose to play without signing in. In Guest Mode, player data is tied only to a temporary anonymous identifier on the device.</p>
+        </div>
+
+        <div class="card">
+            <h2>3. How We Use Collected Data</h2>
+            <p>We process collected data exclusively for the following legitimate purposes:</p>
             <ul>
-                <li>To authenticate player profiles and enable persistent garage and career progression.</li>
-                <li>To facilitate global online multiplayer matchmaking, room routing, and competitive leaderboards.</li>
-                <li>To diagnose frame drops, graphic shader optimizations, or application crashes via native NDK telemetry.</li>
-                <li>To prevent cheats, exploits, or unfair modifications in competitive online matches.</li>
+                <li>To authenticate player credentials and restore saved game progress across sessions.</li>
+                <li>To host and coordinate real-time online multiplayer races and update live leaderboards.</li>
+                <li>To identify hardware-specific graphics glitches, engine bottlenecks, or crash instances.</li>
+                <li>To enforce game integrity and prevent unauthorized cheating or exploits in multiplayer races.</li>
             </ul>
-            <p>We <strong>do not sell</strong>, rent, or trade your personal data to third-party data brokers or advertisers.</p>
+            <p>We do not sell, rent, or trade your personal data to third parties or data brokers.</p>
         </div>
 
         <div class="card">
-            <h2><span class="icon">ðŸ›¡ï¸</span> 4. Third-Party Service Providers</h2>
-            <p>Our application integrates trusted third-party service providers that comply with industry data security standards:</p>
+            <h2>4. Third-Party Services</h2>
+            <p>Car Verse Simulator integrates with trusted third-party service providers that maintain strict industry data protection standards:</p>
             <ul>
-                <li><strong>Google Play Services:</strong> Used for platform licensing, in-app billing verification, and application updates (<a href="https://policies.google.com/privacy" target="_blank" style="color:var(--accent-cyan);">Google Privacy Policy</a>).</li>
-                <li><strong>Firebase Authentication & Cloud Infrastructure (Google LLC):</strong> Used for secure user identity management, credential encryption, and database synchronization (<a href="https://firebase.google.com/support/privacy" target="_blank" style="color:var(--accent-cyan);">Firebase Privacy Overview</a>).</li>
+                <li><strong>Google Play Services:</strong> Provides licensing, in-app billing verification, and application updates. <a href="https://policies.google.com/privacy" target="_blank" style="color:var(--text-heading);">Google Privacy Policy</a>.</li>
+                <li><strong>Firebase Authentication & Infrastructure (Google LLC):</strong> Used for identity management, token verification, and cloud database communication. <a href="https://firebase.google.com/support/privacy" target="_blank" style="color:var(--text-heading);">Firebase Privacy Overview</a>.</li>
             </ul>
         </div>
 
         <div class="card">
-            <h2><span class="icon">ðŸ—‘ï¸</span> 5. Account & Data Deletion Rights</h2>
-            <p>Under Google Play's Data Safety policies, you have the unconditional right to request the permanent deletion of your account and all associated game data at any time.</p>
-            <p>You may initiate account deletion directly inside the game settings or submit an email request via our dedicated deletion portal:</p>
-            <a href="delete-account.html" class="cta-btn">View Account Deletion Instructions &rarr;</a>
+            <h2>5. Data Security</h2>
+            <p>We implement rigorous technical and administrative security controls. All communication between the game client and servers is encrypted in transit using modern HTTPS and Transport Layer Security (TLS 1.3) protocols.</p>
         </div>
 
         <div class="card">
-            <h2><span class="icon">ðŸ”’</span> 6. Data Security & Storage</h2>
-            <p>All data transmitted between your device and our servers is secured using modern cryptographic standards, including <strong>HTTPS / TLS 1.3 encryption in transit</strong>.</p>
-            <p>We maintain strict administrative and technical safeguards to prevent unauthorized access, alteration, or disclosure of player records.</p>
+            <h2>6. Account and Data Deletion Rights</h2>
+            <p>In accordance with Google Play Store policies, all players have the unconditional right to delete their game account and all associated personal and gameplay data at any time.</p>
+            <p>You can delete your account directly inside the game settings or submit a deletion request by email:</p>
+            <a href="delete-account.html" class="button-link">View Account Deletion Instructions &rarr;</a>
         </div>
 
         <div class="card">
-            <h2><span class="icon">ðŸ‘¶</span> 7. Children's Privacy (COPPA)</h2>
-            <p><strong>Car Verse Simulator</strong> is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data without parental consent, please contact us immediately, and we will promptly purge the data from our databases.</p>
+            <h2>7. Children's Privacy (COPPA Compliance)</h2>
+            <p>Car Verse Simulator is not directed to children under 13 years of age. We do not knowingly collect personal data from children under 13. If you believe a child has provided us with personal information without parental consent, please contact us so we can promptly delete the data.</p>
         </div>
 
         <div class="card">
-            <h2><span class="icon">ðŸ“¬</span> 8. Contact & Data Protection Officer</h2>
-            <p>If you have any questions, privacy concerns, or requests regarding this Privacy Policy, please contact our Data Protection team:</p>
+            <h2>8. Contact Information</h2>
+            <p>For questions, privacy inquiries, or data requests, please contact our support team:</p>
             <ul>
-                <li><strong>Developer / Publisher:</strong> Damayanti Technologies</li>
-                <li><strong>Contact Email:</strong> <a href="mailto:damayanticrest@gmail.com" style="color:var(--accent-cyan); font-weight:600;">damayanticrest@gmail.com</a></li>
-                <li><strong>Country of Operation:</strong> India / Global Distribution</li>
+                <li><strong>Publisher:</strong> Damayanti Technologies</li>
+                <li><strong>Support Email:</strong> <a href="mailto:damayanticrest@gmail.com" style="color:var(--text-heading); font-weight:600;">damayanticrest@gmail.com</a></li>
             </ul>
         </div>
 
@@ -298,7 +315,7 @@
 
     <footer class="footer">
         <p>&copy; 2026 Damayanti Technologies. All rights reserved.</p>
-        <p><a href="privacy.html">Privacy Policy</a> &bull; <a href="delete-account.html">Account & Data Deletion</a></p>
+        <p style="margin-top:6px;"><a href="privacy.html">Privacy Policy</a> &bull; <a href="delete-account.html">Account Deletion</a></p>
     </footer>
 
 </body>
