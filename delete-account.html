@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account and Data Deletion - Car Verse Simulator</title>
+    <title>CarVerse Simulator â€“ Account and Data Deletion</title>
     <style>
         :root {
             --bg-page: #f8fafc;
@@ -41,6 +41,13 @@
             text-align: center;
         }
 
+        .badge-row {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
         .badge {
             display: inline-block;
             background-color: var(--callout-bg);
@@ -52,7 +59,6 @@
             font-weight: 600;
             letter-spacing: 0.04em;
             text-transform: uppercase;
-            margin-bottom: 12px;
         }
 
         .header h1 {
@@ -122,8 +128,34 @@
             border-bottom: 1px solid #f1f5f9;
         }
 
+        .card h3 {
+            color: var(--text-heading);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 16px 0 8px;
+        }
+
         .card p {
             margin-bottom: 14px;
+            color: var(--text-body);
+        }
+
+        .card ul {
+            margin: 10px 0 16px 20px;
+            color: var(--text-body);
+        }
+
+        .card li {
+            margin-bottom: 6px;
+        }
+
+        .meta-info {
+            background-color: var(--callout-bg);
+            border-left: 4px solid var(--text-heading);
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            font-size: 14.5px;
             color: var(--text-body);
         }
 
@@ -131,39 +163,36 @@
             background-color: var(--callout-bg);
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            padding: 18px 20px;
-            margin: 14px 0;
+            padding: 16px 20px;
+            margin: 12px 0;
         }
 
         .step-title {
             color: var(--text-heading);
             font-weight: 700;
-            font-size: 15px;
-            margin-bottom: 6px;
+            font-size: 14.5px;
+            margin-bottom: 4px;
         }
 
-        .email-template {
+        .email-box {
             background-color: #ffffff;
             border: 1px solid var(--border-color);
-            border-radius: 6px;
+            border-radius: 8px;
             padding: 18px;
-            font-family: monospace;
-            font-size: 13.5px;
-            color: #1e293b;
             margin: 16px 0;
-            line-height: 1.6;
+            font-size: 14.5px;
         }
 
         .btn-delete {
             display: inline-block;
             background-color: var(--danger-color);
-            color: #ffffff;
-            text-decoration: none;
+            color: #ffffff !important;
+            text-decoration: none !important;
             font-weight: 600;
             font-size: 15px;
             padding: 12px 24px;
             border-radius: 6px;
-            margin-top: 10px;
+            margin: 14px 0 10px;
             transition: background-color 0.15s ease;
         }
 
@@ -171,25 +200,13 @@
             background-color: var(--danger-hover);
         }
 
-        .card ul {
-            margin: 12px 0 16px 20px;
-            color: var(--text-body);
+        a {
+            color: var(--text-heading);
+            text-decoration: underline;
         }
 
-        .card li {
-            margin-bottom: 8px;
-        }
-
-        .tag {
-            display: inline-block;
-            background-color: #ecfdf5;
-            color: #065f46;
-            border: 1px solid #a7f3d0;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-left: 6px;
+        a:hover {
+            color: var(--primary-hover);
         }
 
         .footer {
@@ -200,19 +217,16 @@
             font-size: 14px;
             background-color: #ffffff;
         }
-
-        .footer a {
-            color: var(--text-heading);
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
 
     <header class="header">
-        <span class="badge">Google Play Data Safety</span>
-        <h1>Account and Data Deletion</h1>
-        <p>Car Verse Simulator &bull; Damayanti Technologies</p>
+        <div class="badge-row">
+            <span class="badge">Google Play Data Safety</span>
+        </div>
+        <h1>CarVerse Simulator</h1>
+        <p>Account and Data Deletion</p>
     </header>
 
     <nav class="nav-bar">
@@ -224,100 +238,150 @@
     <main class="container">
 
         <div class="card">
-            <h2>1. Policy Overview</h2>
-            <p>Under the Google Play Developer Policy on Account Deletion, players, parents, and legal guardians of <strong>Car Verse Simulator</strong> have the right to request the complete deletion of their account credentials, personal data, and gameplay records.</p>
-            <p>You can delete your account using either of the following two options:</p>
-            <ul>
-                <li><strong>In-App Deletion:</strong> Instantly delete your account and records from within the game settings.</li>
-                <li><strong>Email / Web Request:</strong> Submit an account deletion request if you have uninstalled the application or cannot access your Android device.</li>
-            </ul>
+            <h2>CarVerse Simulator &ndash; Account and Data Deletion</h2>
+            <div class="meta-info">
+                <strong>Developer:</strong> Damayanti Technologies<br>
+                <strong>Contact:</strong> <a href="mailto:damayanti.technologies@gmail.com">damayanti.technologies@gmail.com</a>
+            </div>
         </div>
 
         <div class="card">
-            <h2>2. Method 1: Delete Account Inside the App</h2>
-            <p>If you have Car Verse Simulator installed on your device, follow these steps:</p>
+            <h2>1. Account Deletion Policy</h2>
+            <p>Damayanti Technologies respects the privacy and data rights of all CarVerse Simulator players.</p>
+            <p>Players, parents and legal guardians may request the permanent deletion of a CarVerse Simulator account and its associated personal information.</p>
+            <p>We provide two ways to request account deletion:</p>
+            <ul>
+                <li>In-App Account Deletion.</li>
+                <li>External Account Deletion Request.</li>
+            </ul>
+            <p>Account deletion requests are available even if the user has uninstalled the game or cannot access their device.</p>
+        </div>
+
+        <div class="card">
+            <h2>2. Method 1 &ndash; Delete Your Account Inside the Game</h2>
+            <p>If CarVerse Simulator is installed on your device:</p>
 
             <div class="step-box">
-                <div class="step-title">Step 1: Open Settings</div>
-                <p>Launch Car Verse Simulator and tap the <strong>Settings (gear icon)</strong> on the top-right corner of the screen.</p>
+                <div class="step-title">Step 1</div>
+                <p style="margin:0;">Open CarVerse Simulator.</p>
             </div>
 
             <div class="step-box">
-                <div class="step-title">Step 2: Select Account Deletion</div>
-                <p>In the Settings menu, select <strong>Delete Account (Google Play Policy)</strong>.</p>
+                <div class="step-title">Step 2</div>
+                <p style="margin:0;">Navigate to Settings.</p>
             </div>
 
             <div class="step-box">
-                <div class="step-title">Step 3: Confirm Deletion</div>
-                <p>A confirmation dialog will appear. Tap <strong>Yes, Permanently Delete</strong>. Your Firebase credentials, garage progress, and telemetry will be removed immediately.</p>
+                <div class="step-title">Step 3</div>
+                <p style="margin:0;">Select Account Settings or Delete Account.</p>
             </div>
-        </div>
 
-        <div class="card">
-            <h2>3. Method 2: Request Account Deletion by Email (Parents & Players)</h2>
-            <p>If you have uninstalled the app, are requesting deletion on behalf of your child, or prefer to request deletion via email, click the button below to generate a pre-formatted email request to our support team:</p>
-
-            <a href="mailto:damayanti.technologies@gmail.com?subject=Account%20and%20Data%20Deletion%20Request%20-%20Car%20Verse%20Simulator&body=Hello%20Damayanti%20Technologies%20Support%2C%0A%0APlease%20permanently%20delete%20my%20game%20account%20and%20all%20associated%20data%20for%20Car%20Verse%20Simulator.%0A%0AMy%20Account%20Information%3A%0A-%20Registered%20Email%20Address%3A%20%5BEnter%20your%20email%20here%5D%0A-%20In-Game%20Driver%20Name%20or%20UID%20(if%20known)%3A%20%5BEnter%20name%20or%20UID%5D%0A%0AThank%20you." class="btn-delete">
-                Send Account Deletion Request Email
-            </a>
-
-            <div style="margin-top: 20px;">
-                <p>You can also send an email manually using the following format:</p>
-                <div class="email-template">
-<strong>To:</strong> damayanti.technologies@gmail.com
-<strong>Subject:</strong> Account and Data Deletion Request - Car Verse Simulator
-
-<strong>Body:</strong>
-Hello Damayanti Technologies Support,
-
-Please permanently delete my game account and all associated data for Car Verse Simulator.
-
-My Account Information:
-- Registered Email Address: [Your Email]
-- In-Game Driver Name or User ID (if known): [Your Name or UID]
-
-Thank you.
-                </div>
+            <div class="step-box">
+                <div class="step-title">Step 4</div>
+                <p style="margin:0;">Select Delete Account.</p>
             </div>
+
+            <div class="step-box">
+                <div class="step-title">Step 5</div>
+                <p style="margin:0;">Read the deletion warning and confirm by selecting Permanently Delete Account.</p>
+            </div>
+
+            <p style="margin-top:16px;">Once the deletion process is successfully completed, your account and associated personal information will be deleted from our active systems, subject to applicable legal retention requirements and backup deletion schedules.</p>
+            <p>Deleting your account may permanently remove your game progress, virtual coins, vehicles, upgrades, achievements and associated multiplayer information.</p>
+            <p><strong>This action cannot be undone.</strong></p>
         </div>
 
         <div class="card">
-            <h2>4. What Data Is Deleted vs. Retained</h2>
-            <p><strong>Data that is permanently deleted:</strong></p>
-            <ul>
-                <li>Firebase Authentication profile, email address, password hash, and User ID.</li>
-                <li>Saved garage progress, vehicle setups, and career milestones.</li>
-                <li>Online multiplayer leaderboard placements, lap times, and telemetry.</li>
-            </ul>
+            <h2>3. Method 2 &ndash; Request Account Deletion Through Our Website or Email</h2>
+            <p>If you have uninstalled CarVerse Simulator, lost access to your device or are a parent or legal guardian requesting deletion on behalf of a child, you can submit an account deletion request.</p>
 
-            <p><strong>Data that may be retained (legal requirement only):</strong></p>
+            <div class="email-box">
+                <p><strong>Email:</strong> <a href="mailto:damayanti.technologies@gmail.com">damayanti.technologies@gmail.com</a></p>
+                <p><strong>Subject:</strong> CarVerse Simulator &ndash; Account and Data Deletion Request</p>
+                <p><strong>Please include the following information:</strong></p>
+                <ul>
+                    <li>Registered email address, if applicable.</li>
+                    <li>In-game username.</li>
+                    <li>Player ID or UID, if available.</li>
+                    <li>Confirmation that you are requesting permanent account deletion.</li>
+                    <li>If applicable, confirmation that you are the parent or legal guardian making the request.</li>
+                </ul>
+
+                <p style="margin-top:14px;">You may also use our pre-addressed email request link:</p>
+                <a href="mailto:damayanti.technologies@gmail.com?subject=CarVerse%20Simulator%20-%20Account%20Deletion%20Request" class="btn-delete">Send Account Deletion Request</a>
+            </div>
+
+            <p>We may request reasonable information to verify account ownership before processing a deletion request.</p>
+            <p>Users do not need to reinstall the game to submit an external deletion request.</p>
+        </div>
+
+        <div class="card">
+            <h2>4. Information Deleted</h2>
+            <p>When an account deletion request is successfully processed, we will delete or de-identify the associated information from our active systems, as applicable.</p>
+            <p>This may include:</p>
             <ul>
-                <li><strong>Statutory Financial Records:</strong> In-app purchase transaction receipts (if any) are retained only where mandated by statutory tax, accounting, or anti-fraud laws. No personal gameplay or login data is retained.</li>
+                <li>Firebase Authentication account and associated login information.</li>
+                <li>Registered email address associated with the account.</li>
+                <li>Player username and profile information.</li>
+                <li>Player identifiers associated with the account.</li>
+                <li>Saved game progress.</li>
+                <li>Garage information and vehicle configurations.</li>
+                <li>Virtual coin balances.</li>
+                <li>Friend lists and friend request information.</li>
+                <li>Associated multiplayer profile information.</li>
+                <li>Associated racing statistics and achievements.</li>
+            </ul>
+            <p>Where information has been shared with our service providers for processing, we will take appropriate steps to request deletion where applicable.</p>
+        </div>
+
+        <div class="card">
+            <h2>5. Information That May Be Retained</h2>
+            <p>Certain limited information may be retained where reasonably necessary for:</p>
+            <ul>
+                <li>Legal and regulatory compliance.</li>
+                <li>Security and fraud prevention.</li>
+                <li>Resolving disputes.</li>
+                <li>Enforcing legitimate legal rights.</li>
+            </ul>
+            <p>Any retained information will be limited to the applicable purpose and will not be used to continue providing the deleted account's normal game services.</p>
+            <p>Temporary copies may remain in protected backups or system logs until they are removed through the normal retention and deletion process.</p>
+        </div>
+
+        <div class="card">
+            <h2>6. Account Deletion Processing Time</h2>
+            <p><strong>In-App Requests:</strong><br>
+            Where supported by the implemented deletion system, account deletion will be initiated immediately after the user's final confirmation.</p>
+
+            <p><strong>External Requests:</strong><br>
+            External deletion requests will be reviewed and processed within 30 calendar days after successful verification.<br>
+            If additional verification is required, we may contact the requester using the supplied contact information.<br>
+            We will provide confirmation when the deletion process has been completed.</p>
+        </div>
+
+        <div class="card">
+            <h2>7. Important Information</h2>
+            <ul>
+                <li>Account deletion is permanent.</li>
+                <li>Deleted game progress and virtual items may not be recoverable.</li>
+                <li>Virtual coins have no cash redemption value.</li>
+                <li>Account deletion does not automatically delete information that we are legally required to retain.</li>
+                <li>Parents and legal guardians may contact us regarding deletion requests for children's accounts.</li>
             </ul>
         </div>
 
         <div class="card">
-            <h2>5. Deletion Timeline <span class="tag">Within 30 Days</span></h2>
-            <p>In accordance with Google Play Developer Policies:</p>
-            <ul>
-                <li><strong>In-app deletion:</strong> Executed immediately upon confirmation.</li>
-                <li><strong>Email requests:</strong> Verified and permanently processed within <strong>30 calendar days</strong> of receipt. You will receive a confirmation email once the process is complete.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>6. Developer Support</h2>
-            <p>For assistance with account deletion, parental inquiries, or data safety questions, please contact:</p>
-            <ul>
-                <li><strong>Publisher:</strong> Damayanti Technologies</li>
-                <li><strong>Email:</strong> <a href="mailto:damayanti.technologies@gmail.com" style="color:var(--text-heading); font-weight:600;">damayanti.technologies@gmail.com</a></li>
-            </ul>
+            <h2>8. Contact Information</h2>
+            <p>For account deletion assistance, privacy questions or other concerns, contact:</p>
+            <p><strong>Developer:</strong> Damayanti Technologies<br>
+            <strong>Game:</strong> CarVerse Simulator<br>
+            <strong>Email:</strong> <a href="mailto:damayanti.technologies@gmail.com">damayanti.technologies@gmail.com</a><br>
+            <strong>Privacy Policy:</strong> <a href="https://carverse-simulator.damayanticrest.online/privacy-policy.html">https://carverse-simulator.damayanticrest.online/privacy-policy.html</a></p>
         </div>
 
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Damayanti Technologies. All rights reserved.</p>
+        <p>&copy; 2026 Damayanti Technologies. All Rights Reserved.</p>
         <p style="margin-top:6px;"><a href="privacy.html">Privacy Policy</a> &bull; <a href="delete-account.html">Account Deletion</a></p>
     </footer>
 
